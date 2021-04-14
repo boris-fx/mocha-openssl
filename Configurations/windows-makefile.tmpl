@@ -40,7 +40,7 @@
 
  sub lib {
      (my $lib = shift) =~ s/\.a$//;
-     $lib .= '_static'
+     $lib .= '_s'
          if (defined $unified_info{sharednames}->{$lib});
      return $lib . $libext;
  }
